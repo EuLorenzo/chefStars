@@ -1,0 +1,41 @@
+*, :root{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+
+  --cor1: #8B0000;
+  --cor2: #FFD700;
+  --cor3: #964B00;
+  --cor4: #FFFFFF;
+}
+
+
+/*Header*/
+header{
+  text-align: center;
+  background-color: var(--cor2);
+  position: relative;
+  padding: 10px;
+  height: 150px;
+}
+
+nav a{
+  text-decoration: none;
+  margin-right: 10px;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  font-size: 1.1em;
+}
+
+#conteudo{
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  transform: translate(0,-50%);
+}
+
+
+
+
