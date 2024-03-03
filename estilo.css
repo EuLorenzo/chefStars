@@ -12,15 +12,18 @@
   --cor5: #535500;
 }
 
+body{
+  min-width: 1000px;
+  background-color: #EFDDC4;
+}
+
 
 /*Header*/
 header{
-  display: inline-block;
+  display: flex;
   align-items: center;
-  justify-content: center;
   position: relative;
   background-color: var(--cor1);
-  position: relative;
   height: 10vh;
   width: 100%;
 }
@@ -28,14 +31,15 @@ header{
 #logo{
   position: absolute;
   top: 0px;
+  left: 5%;
   background-color: var(--cor5);
-  padding: 5px;
-  padding-bottom: 30px;
-  position: absolute;
+  padding: 10px;
+  
 }
 
 nav{
-  text-align: center; 
+  width: fit-content;
+  margin: auto;
 }
 
 nav a{
@@ -52,40 +56,101 @@ nav a:hover{
 }
 
 #contato{
-  right: 0;
+  position: absolute;
+  right: 7%;
+  text-align: right;
+}
+
+#contato span{
+  font-weight: 500;
   font-family: "Montserrat", Arial, Helvetica, sans-serif;
   color: white;
-  
 }
 /*Fundo01*/
-#fundo01{
-  background-image: url(img/fundos/pexels-pixabay-262978.jpg);
-  background-size: cover;
-  background-position: center center;
+#fundo00{
+  background-color: var(--cor1);
   height: 90vh;
 }
 
-/*Main*/
-main{
-  display: flex;
+#fundo01{
+  height: 97%;
+  background-image: url(img/fundos/pexels-pixabay-262978.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
 
+/*Main*/
+#cardsMain{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 50px;
 }
 .card{
-  margin: auto;
-  border-radius: 30px;
-  border: solid black 1px;
-  max-width: 400px;
-  min-width: 100px;
-}
-
-.card img{
-  border-radius: 30px;
+  height: 300px;
+  color: white;
+  background-color: #A52421;
+  padding-bottom: 50px;
 }
 
 .info{
+  text-align: center;
   padding: 10px;
 }
 
-/*Teste*/
+#butCardapio{
+  display: block;
+  color: white;
+  background-color: #A9965F;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 1em;
+  text-decoration: none;
+
+  padding: 20px 40px 20px 40px;
+
+  margin: auto;
+  width: fit-content;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  transition: 0.4s;
+}
+
+#butCardapio:hover{
+  background-color: #A52421;
+}
+/*Sobre*/
+#sobre{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: var(--cor1);
+  height: 100vh;
+}
+
+#imgSobre{
+  position: relative;
+  background-color:#FCF3D7;
+  height: 90vh;
+  width: 40%;
+  
+}
+
+#imgSobre img{
+  height: 95%;
+  width: 95%;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textoSobre{
+  width: 40%;
+  color: white;
+}
 
 
