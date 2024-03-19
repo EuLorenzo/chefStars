@@ -74,10 +74,11 @@ nav a:hover{
 
 #fundo01{
   height: 97%;
-  background-image: url(img/fundos/pexels-pixabay-262978.jpg);
+  background-image: url(../img/fundos/pexels-pixabay-262978.jpg);
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   
 }
 
@@ -100,21 +101,26 @@ nav a:hover{
   padding: 10px;
 }
 
+.info h2{
+  font-family: "Montserrat";
+  margin-bottom: 15px;
+}
+
 #butCardapio{
-  display: block;
+  font-size: 1em;
+  font-family: "Montserrat";
+  font-weight: 600;
   color: white;
   background-color: #A9965F;
-  font-family: "Montserrat";
-  font-weight: 500;
-  font-size: 1em;
   text-decoration: none;
 
-  padding: 20px 40px 20px 40px;
-
-  margin: auto;
   width: fit-content;
+  padding: 20px 40px 20px 40px;
+  margin: auto;
   margin-top: 30px;
   margin-bottom: 50px;
+
+  display: block;
   transition: 0.4s;
 }
 
@@ -125,15 +131,16 @@ nav a:hover{
 #sobre{
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  gap: 10%;
   background-color: var(--cor1);
-  height: 100vh;
+  height: 85vh;
 }
 
 #imgSobre{
   position: relative;
   background-color:#FCF3D7;
-  height: 90vh;
+  height: 85%;
   width: 40%;
   
 }
@@ -149,8 +156,52 @@ nav a:hover{
 }
 
 #textoSobre{
-  width: 40%;
+  font-family: "Montserrat";
+  max-width: 40%;
+  min-width: 20%;
   color: white;
 }
+
+#textoSobre p{
+  margin: 15px 0px 15px 0px;
+  font-family: "Montserrat";
+}
+
+
+/*Footer*/
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  background-color: var(--cor1);
+  color: white;
+  margin-top: 30px;
+  height: 200px;
+}
+
+#footInsta{
+  text-align: center;
+}
+
+#footInsta a{
+  color: white;
+  text-decoration: underline;
+}
+
+footer p{
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
 
 
