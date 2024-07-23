@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, :root{
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0px;
+  margin: 0px;
+
+  --cor1: #7D1917;
+  --cor2: #FFD700;
+  --cor3: #964B00;
+  --cor4: #FFFFFF;
+  --cor5: #535500;
+}
+
+body{
+  min-width: 1000px;
+  background-color: #EFDDC4;
+}
+
+
+/*Header*/
+header{
+  display: flex;
+  align-items: center;
+  position: relative;
+  background-color: var(--cor1);
+  height: 10vh;
+  width: 100%;
+}
+
+#logo{
+  position: absolute;
+  top: 0px;
+  left: 5%;
+  background-color: var(--cor5);
+  padding: 10px;
+  
+}
+
+nav{
+  width: fit-content;
+  margin: auto;
+}
+
+nav a{
+  font-weight: 500;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+  margin-right: 18px;
+  transition: 0.5s;
+}
+
+nav a:hover{
+  color: #A9965F;
+}
+
+#contato{
+  position: absolute;
+  right: 7%;
+  text-align: right;
+}
+
+#contato span{
+  font-weight: 500;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  color: white;
+}
+/*Fundo01*/
+#fundo00{
+  background-color: var(--cor1);
+  height: 90vh;
+}
+
+#fundo01{
+  height: 97%;
+  background-image: url(../img/fundos/pexels-pixabay-262978.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  
+}
+
+/*Main*/
+#cardsMain{
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 50px;
+}
+.card{
+  height: 300px;
+  color: white;
+  background-color: #A52421;
+  padding-bottom: 50px;
+}
+
+.info{
+  text-align: center;
+  padding: 10px;
+}
+
+.info h2{
+  font-family: "Montserrat";
+  margin-bottom: 15px;
+}
+
+#butCardapio{
+  font-size: 1em;
+  font-family: "Montserrat";
+  font-weight: 600;
+  color: white;
+  background-color: #A9965F;
+  text-decoration: none;
+
+  width: fit-content;
+  padding: 20px 40px 20px 40px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  display: block;
+  transition: 0.4s;
+}
+
+#butCardapio:hover{
+  background-color: #A52421;
+}
+/*Sobre*/
+#sobre{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  background-color: var(--cor1);
+  height: 85vh;
+}
+
+#imgSobre{
+  position: relative;
+  background-color:#FCF3D7;
+  height: 85%;
+  width: 40%;
+  
+}
+
+#imgSobre img{
+  height: 95%;
+  width: 95%;
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#textoSobre{
+  font-family: "Montserrat";
+  max-width: 40%;
+  min-width: 20%;
+  color: white;
+}
+
+#textoSobre p{
+  margin: 15px 0px 15px 0px;
+  font-family: "Montserrat";
+}
+
+
+/*Footer*/
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  background-color: var(--cor1);
+  color: white;
+  margin-top: 30px;
+  height: 200px;
+}
+
+#footInsta{
+  text-align: center;
+}
+
+#footInsta a{
+  color: white;
+  text-decoration: underline;
+}
+
+footer p{
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+.campo{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+
+
+
+
+
